@@ -12,7 +12,7 @@ BCFTools, Samtools and htslib: are set of utilities that manipulate variant call
 Description of the data used as input files for the scripts:
 * refgenome folder contains the reference genome for soybean (Glycine max)
 * GBS_data folder contains two files. One with .fq file which is the reads sequences and the .txt file which contains the barcodes.
-* Scripts folder contains bash scripts that needs to be run in the following order to perform variant calling:
+* Bash scripts that needs to be run in the following order to perform variant calling:
 Sabre.sh: the address of the .fq file should be placed in front of the DATA, the address of the .txt file should be placed in front of the BARCODE and the address of the sabre software should be placed in front of the TOOL. It will demultiplexing the .fq file using the barcode file and generates a log file named sabre.log.
 
 Cutad_parallel.sh: It will clean all the demultiplexed files by removing the adaptor sequence provided in front of the ADAP. It will produce .fastq files and a log file named cutadapt.log.
